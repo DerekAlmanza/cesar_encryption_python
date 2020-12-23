@@ -1,6 +1,6 @@
 def cifrado_mayus():
     desplazamiento = 3
-    encryption = ""
+    caracter_encripto = ""
     texto = input("Ingrese cadena de texto a cifrar: ")
     for caracter in texto:
 
@@ -15,16 +15,16 @@ def cifrado_mayus():
             nuevo_caracter = desplazamient + ord("A")
             cifrado = chr(nuevo_caracter)
 
-            encryption = encryption + cifrado
+            caracter_encripto = caracter_encripto + cifrado
         else:
-            encryption += caracter
+            caracter_encripto += caracter
         
-    print(encryption)
+    print(caracter_encripto)
 
 
 def cifrado_minus():
     desplazamiento = 3
-    encryption = ""
+    caracter_encripto = ""
     texto = input("Ingrese cadena de texto a cifrar: ")
     for caracter in texto:
 
@@ -39,15 +39,15 @@ def cifrado_minus():
             nuevo_caracter = desplazamient + ord("a")
             cifrado = chr(nuevo_caracter)
 
-            encryption = encryption + cifrado
+            caracter_encripto = caracter_encripto + cifrado
         else:
-            encryption += caracter
+            caracter_encripto += caracter
     
-    print(encryption)
+    print(caracter_encripto)
 
 def cifrado_mayus_minus():
     desplazamiento = 3
-    encryption = ""
+    caracter_encripto = ""
     texto = input("Ingrese cadena de texto a cifrar: ")
     for caracter in texto:
 
@@ -62,7 +62,7 @@ def cifrado_mayus_minus():
             nuevo_caracter = desplazamient + ord("a")
             cifrado = chr(nuevo_caracter)
 
-            encryption = encryption + cifrado
+            caracter_encripto = caracter_encripto + cifrado
         elif caracter.isupper():
             #Calcular índice del caracter en UNICODE
             caracter_indice = ord(caracter) - ord("A")
@@ -74,8 +74,8 @@ def cifrado_mayus_minus():
             nuevo_caracter = desplazamient + ord("A")
             cifrado = chr(nuevo_caracter)
 
-            encryption = encryption + cifrado
+            caracter_encripto = caracter_encripto + cifrado
         else:
-            encryption += caracter
+            caracter_encripto += caracter
 
-    print(encryption)
+    print(caracter_encripto)
