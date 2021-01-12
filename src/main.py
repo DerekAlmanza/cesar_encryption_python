@@ -18,6 +18,8 @@ def quiere_repetir():
     opcion = input('Teclee y/n para realizar otra encriptación o no: ')
     if opcion == "y":
         menu()
+    elif opcion == "n":
+        pass
     else:
         pass
 
