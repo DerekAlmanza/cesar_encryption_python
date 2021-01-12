@@ -13,6 +13,14 @@ def menu_interfaz():
     print ("\t4 - Cifrar caracteres alfanuméricos.")
     print ("\t5 - Salir \n")
 
+def quiere_repetir():
+    print('\n ¿Desea realizar otra encriptación?')
+    opcion = input('Teclee y/n para realizar otra encriptación o no: ')
+    if opcion == "y":
+        menu()
+    else:
+        pass
+
 
 def menu():
     while True:
@@ -21,15 +29,19 @@ def menu():
         print('')
         if opcion == "1":
             cesar_abc.cifrado_mayus()
+            quiere_repetir()
             break
         elif opcion == "2":
             cesar_abc.cifrado_minus()
+            quiere_repetir()
             break
         elif opcion == "3":
             cesar_abc.cifrado_mayus_minus()
+            quiere_repetir()
             break
         elif opcion == "4":
             cesar_123.cifrado_alfanumerico()
+            quiere_repetir()
             break
         elif opcion == "5":
             break
